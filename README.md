@@ -1,6 +1,6 @@
 # Joint-COD-SOD (CVPR2021)
 Uncertainty-aware Joint Salient Object and Camouflaged Object Detection
-![alt text](./network_overview.pdf)
+![alt text](./network_overview.png)
 
 # Code
 Code will be released very soon.
