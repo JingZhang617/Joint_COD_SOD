@@ -8,6 +8,15 @@ https://drive.google.com/file/d/1FJikATesQCZJuu-wzKcWVFTaCL6rwVaj/view?usp=shari
 
 (Note that, as we retrain the model, the performance is slightly different from our reported number.)
 
+```
+@inproceedings{yunqiu_cod21,
+  title={Simultaneously Localize, Segment and Rank the Camouflaged Objects},
+  author={Lyu, Yunqiu and Zhang, Jing and Dai, Yuchao and Li, Aixuan and Liu, Bowen and Barnes, Nick and Fan, Deng-Ping},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021}
+}
+```
+
 # Code
 Code will be released very soon.
 
