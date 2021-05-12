@@ -2,6 +2,12 @@
 Uncertainty-aware Joint Salient Object and Camouflaged Object Detection
 ![alt text](./network_overview.png)
 
+# Camouflage Maps
+We provide camouflage maps on four camouflage testing datasets: CAMO, CHAMELEON, COD10K and the newly released NC4K from: "Simultaneously Localize, Segment and Rank the Camouflaged Objects":
+https://drive.google.com/file/d/1FJikATesQCZJuu-wzKcWVFTaCL6rwVaj/view?usp=sharing
+
+(Note that, as we retrain the model, the performance is slightly different from our reported number.)
+
 # Code
 Code will be released very soon.
 
