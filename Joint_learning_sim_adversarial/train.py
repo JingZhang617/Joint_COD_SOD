@@ -448,3 +448,5 @@ for i in range(1,opt.train_iters+1):
         os.makedirs(save_path)
     if i % 2000 == 0:
         torch.save(generator.state_dict(), save_path + 'Model' + '_%d' % i + '_gen.pth')
+        torch.save(discrminator_cod.state_dict(), save_path + 'Model' + '_%d' % i + '_dis_cod.pth')
+        torch.save(discrminator_sod.state_dict(), save_path + 'Model' + '_%d' % i + '_dis_sod.pth')
