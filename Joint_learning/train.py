@@ -40,11 +40,11 @@ generator_optimizer=torch.optim.Adam(filter(lambda p: p.requires_grad, generator
 scheduler = lr_scheduler.StepLR(generator_optimizer,step_size=2000,gamma = 0.95)
 
 
-image_root = '/home/jingzhang/jing_files/TPAMI/joint_cod_sod/DUTS_COD10553/img/'
-gt_root = '/home/jingzhang/jing_files/TPAMI/joint_cod_sod/DUTS_COD10553/gt/'
+image_root = './joint_cod_sod/DUTS_COD10553/img/'
+gt_root = './joint_cod_sod/DUTS_COD10553/gt/'
 
-cod_image_root = '/home/jingzhang/jing_files/RGBD_COD/dataset/train/Imgs/'
-cod_gt_root = '/home/jingzhang/jing_files/RGBD_COD/dataset/train/GT/'
+cod_image_root = './dataset/train/Imgs/'
+cod_gt_root = './dataset/train/GT/'
 
 train_loader = get_loader(image_root, gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
 cod_train_loader = get_loader_cod(cod_image_root, cod_gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
