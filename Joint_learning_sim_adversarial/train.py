@@ -53,13 +53,13 @@ discrminator_cod.cuda()
 discrminator_cod_params = discrminator_cod.parameters()
 discrminator_cod_optimizer = torch.optim.Adam(discrminator_cod_params, opt.lr_dis_cod)
 
-image_root = '/home/jingzhang/jing_files/TPAMI/joint_cod_sod/DUTS_COD10553/img/'
-gt_root = '/home/jingzhang/jing_files/TPAMI/joint_cod_sod/DUTS_COD10553/gt/'
+image_root = './joint_cod_sod/DUTS_COD10553/img/'
+gt_root = './joint_cod_sod/DUTS_COD10553/gt/'
 
-cod_image_root = '/home/jingzhang/jing_files/RGBD_COD/dataset/train/Imgs/'
-cod_gt_root = '/home/jingzhang/jing_files/RGBD_COD/dataset/train/GT/'
+cod_image_root = './dataset/train/Imgs/'
+cod_gt_root = './dataset/train/GT/'
 
-sim_img_root = '/home/jingzhang/jing_files/TPAMI/joint_cod_sod/JPEGImages/'
+sim_img_root = './joint_cod_sod/JPEGImages/'
 
 train_loader = get_loader(image_root, gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
 cod_train_loader = get_loader_cod(cod_image_root, cod_gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
