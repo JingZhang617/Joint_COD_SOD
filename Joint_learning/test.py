@@ -28,10 +28,10 @@ generator.cuda()
 generator.eval()
 
 
-sod_dataset_path = '/home/jingzhang/jing_files/RGB_Dataset/test/img/'
+sod_dataset_path = './RGB_Dataset/test/img/'
 sod_test_datasets = ['DUTS_Test', 'DUT', 'ECSSD', 'HKU-IS', 'SOD', 'PASCAL']
 
-cod_dataset_path = '/home/jingzhang/jing_files/RGBD_COD/dataset/test/'
+cod_dataset_path = './RGB_COD/dataset/test/'
 cod_test_datasets = ['CAMO','CHAMELEON','COD10K', 'NC4K']
 
 for dataset in sod_test_datasets:
