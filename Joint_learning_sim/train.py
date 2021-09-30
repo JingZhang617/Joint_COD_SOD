@@ -21,7 +21,7 @@ import torch.optim.lr_scheduler as lr_scheduler
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--epoch', type=int, default=30, help='epoch number')
-parser.add_argument('--train_iters', type=int, default=20000, help='epoch number')
+parser.add_argument('--train_iters', type=int, default=30000, help='epoch number')
 parser.add_argument('--lr_gen', type=float, default=2.5e-5, help='learning rate')
 parser.add_argument('--batchsize', type=int, default=13, help='training batch size')
 parser.add_argument('--trainsize', type=int, default=480, help='training dataset size')
@@ -29,8 +29,8 @@ parser.add_argument('--clip', type=float, default=0.5, help='gradient clipping m
 parser.add_argument('--decay_rate', type=float, default=0.9, help='decay rate of learning rate')
 parser.add_argument('--decay_epoch', type=int, default=20, help='every n epochs decay learning rate')
 parser.add_argument('-beta1_gen', type=float, default=0.5,help='beta of Adam for generator')
-parser.add_argument('--start_sim', type=int, default=1000, help='start point to involve similarity measure')
-parser.add_argument('--stop_sim', type=int, default=4000, help='stop point to involve similarity measure')
+parser.add_argument('--start_sim', type=int, default=20000, help='start point to involve similarity measure')
+parser.add_argument('--stop_sim', type=int, default=24000, help='stop point to involve similarity measure')
 
 opt = parser.parse_args()
 print('Generator Learning Rate: {}'.format(opt.lr_gen))
