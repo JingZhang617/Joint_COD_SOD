@@ -21,7 +21,7 @@ import torch.optim.lr_scheduler as lr_scheduler
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--epoch', type=int, default=30, help='epoch number')
-parser.add_argument('--train_iters', type=int, default=20000, help='epoch number')
+parser.add_argument('--train_iters', type=int, default=30000, help='epoch number')
 parser.add_argument('--lr_gen', type=float, default=2.5e-5, help='learning rate')
 parser.add_argument('--batchsize', type=int, default=28, help='training batch size')
 parser.add_argument('--trainsize', type=int, default=480, help='training dataset size')
